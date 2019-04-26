@@ -10,7 +10,7 @@ class TestMathErrors(unittest.TestCase):
     
     def test_00(self):
         x = 1 + 1
-        answer = 1
+        answer = 2
         self.assertEqual(x, answer)
 
     def test_01(self):
@@ -27,7 +27,7 @@ class TestMathErrors(unittest.TestCase):
         
     def test_03(self):
         x = 3 + 2 + 3 / 4.
-        answer = 2
+        answer = 5.75
         self.assertEqual(x, answer)
 
     def test_04(self):
@@ -42,7 +42,7 @@ class TestMathErrors(unittest.TestCase):
             'cheese': 8.10,
         }
         x = sum(grocery_list.values())
-        answer = 17.10
+        answer = 18.10
         self.assertEqual(x, answer)
             
 if __name__ == '__main__':
